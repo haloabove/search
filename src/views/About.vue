@@ -1,0 +1,31 @@
+<template>
+  <b-row>
+    <b-col lg="12">
+      <h1 id="tables" class="bv-no-focus-ring" tabindex="-1">
+        <span class="bd-content-title">Used Libraries and frameworks</span>
+      </h1>
+      <b-row align-h="center">
+        <b-col lg="3">
+          <b-list-group>
+            <b-list-group-item target="_blank" href="https://www.npmjs.com/"
+              >Npm</b-list-group-item
+            >
+            <b-list-group-item target="_blank" href="https://cli.vuejs.org/"
+              >Vue CLI</b-list-group-item
+            >
+            <b-list-group-item
+              target="_blank"
+              href="https://github.com/axios/axios"
+              >Axios</b-list-group-item
+            >
+            <b-list-group-item
+              target="_blank"
+              href="https://bootstrap-vue.org/docs/"
+              >Boostrap vue</b-list-group-item
+            >
+          </b-list-group>
+        </b-col>
+      </b-row>
+    </b-col>
+  </b-row>
+</template>
