@@ -7,14 +7,13 @@
       <b-overlay :show="busy" rounded="lg">
         <b-input-group size="sm" class="searchWrapper mb-2 mt-2">
           <b-form-input
-            v-model="search"
+            v-model="preSearch"
             trim
             id="wordSearch"
             ref="wordSearch"
             placeholder="Please start Typing."
             @update="clearSearch"
             type="search"
-            debounce="500"
           ></b-form-input>
           <b-button-group size="sm">
             <b-button
@@ -24,8 +23,8 @@
               class="ripple"
               size="sm"
               variant="info"
-              ><b-icon-search></b-icon-search
-            ></b-button>
+              ><b-icon-search></b-icon-search>Search</b-button
+            >
           </b-button-group>
         </b-input-group>
         <b-table></b-table>
@@ -93,6 +92,7 @@ export default {
           key: "word",
         },
       ],
+      search: "",
       currentPage: 1,
       productHeaders: [],
     };
@@ -103,12 +103,12 @@ export default {
       busy: "getBusy",
       wordList: "getFilteredWords",
     }),
-    search: {
+    preSearch: {
       get() {
-        this.$store.getters["getUserInput"];
+        this.$store.getters["DbStore/getDashboardSearch"];
       },
       set(val) {
-        this.$store.dispatch("setInput", val);
+        this.search = val;
       },
     },
     totalRowsLenght() {
