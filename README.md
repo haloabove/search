@@ -2,8 +2,11 @@
 ## Libraries setup
 
 -install Npm (https://www.npmjs.com/get-npm).
+
 -Clone or copy this repository locally.
+
 -Open cmd and navigate to the folder.
+
 -Follow below instructions to setup project (npm install -> npm run serve -> got to http://localhost:8080)
 
 ## Project setup
