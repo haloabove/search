@@ -2,7 +2,7 @@
   <b-row>
     <b-col lg="12">
       <h1 id="tables" class="bv-no-focus-ring" tabindex="-1">
-        <span class="bd-content-title">Used Libraries and frameworks</span>
+        <span class="bd-content-title">Libraries and frameworks used:</span>
       </h1>
       <b-row align-h="center">
         <b-col lg="3">
