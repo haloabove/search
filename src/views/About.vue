@@ -21,7 +21,7 @@
             <b-list-group-item
               target="_blank"
               href="https://bootstrap-vue.org/docs/"
-              >Boostrap vue</b-list-group-item
+              >Boostrap-vue</b-list-group-item
             >
           </b-list-group>
         </b-col>
